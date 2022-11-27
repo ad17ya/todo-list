@@ -1,0 +1,18 @@
+<h1> My todo list</h1>
+
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Owner</th>
+        <th>Mark as Done</th>
+    </tr>
+    {% for task in tasks %}
+    <tr>
+        <td>{{ task.task }}</td>
+        <td>{{ task.due_date }}</td>
+        <td>{{ task.owner }}</td>
+        <td><a href="{% url 'mark_done' task.id %}">Mark as Done</a></td>
+    </tr>
+    {% endfor %}
+</table>
