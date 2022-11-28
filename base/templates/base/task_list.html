@@ -2,17 +2,15 @@
 
 <table>
     <tr>
-        <th>Task</th>
-        <th>Due Date</th>
-        <th>Owner</th>
-        <th>Mark as Done</th>
+        <th>Item</th>
+        <th></th>
     </tr>
     {% for task in tasks %}
     <tr>
-        <td>{{ task.task }}</td>
-        <td>{{ task.due_date }}</td>
-        <td>{{ task.owner }}</td>
-        <td><a href="{% url 'mark_done' task.id %}">Mark as Done</a></td>
+        <td>{{task.title}}</td>
+        <td><a href="{%url 'task' task.id %}">View</a></td>
     </tr>
+    {% empty %}
+    <h3> No items in list</h3>
     {% endfor %}
 </table>
