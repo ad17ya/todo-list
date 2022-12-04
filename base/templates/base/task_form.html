@@ -1,5 +1,6 @@
-<!-- Creating a form -->
+{%extends 'base/main.html' %}
 
+{% block content %}
 <h3> Task Form </h3>
 
 <a href="{% url 'tasks' %}"> Back </a>
@@ -10,3 +11,4 @@
     <input type="submit" value="Save">
 
 </form>
+{% endblock content %}

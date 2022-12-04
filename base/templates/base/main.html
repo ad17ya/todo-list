@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do The List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: beige;
+            font-family: 'Nunito', sans-serif;
+            padding-top: 50px;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        a,p {
+            color: #4b5156;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.20);
+            box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.20);
+        }
+
+        .header-bar{
+            display: flex;
+            color: #fff;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #EEA390 0%, #EB796F 49%, #EB796F 100%);
+        }
+
+        .header-bar a {
+            color: rgb(247, 247, 247);
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
