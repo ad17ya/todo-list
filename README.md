@@ -1,4 +1,4 @@
-## A simple todo list app created using Django
+# A simple todo list app created using Django
 
 ## Installation
 
@@ -19,7 +19,7 @@
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-# Screenshots
+## Screenshots
 ![Screenshot 1](screenshots/mainpage.png?raw=true "Main Page")
 ![Screenshot 2](screenshots/registerpage.png?raw=true "Register")
 ![Screenshot 3](screenshots/loginpage.png?raw=true "Login")
